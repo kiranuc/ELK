@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.navbar {
+    background-color: #ffda3f;
+}
+
+.home-page {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 100px;
+    background-image: url("images/bg.png");
+    background-size: cover;
+}
+
+.home-page .content-box {
+    position: relative;
+    max-width: 600px;
+    z-index: 1000;
+}
+
+.skyImage {
+    position: absolute;
+    height: 398px;
+    right: 95px;
+    bottom: 138px;
+    right: 168px;
+}
+
+.elkName img {
+    position: absolute;
+    /* max-width: 398px; */
+    width: 69%;
+    z-index: 3;
+    margin-bottom: 9px;
+    left: 138px;
+    bottom: 9px;
+}
+
+.home-page .content-box h1 {
+    font-size: 60px;
+    /* color: #fff; */
+    text-transform: uppercase;
+    color: white;
+    /* margin-bottom: 117px; */
+    bottom: 171px;
+    position: absolute;
+    max-width: 100%;
+    /* width: 1235px; */
+    left: 319px;
+    text-align: center;
+}
+
+
+.home-page .content-box p {
+    font-size: 25px;
+    position: relative;
+    left: 136px;
+    top: 54px;
+    color: #3d3c3c;
+}
+
+
+.home-page .content-box a {
+    position: relative;
+    margin-top: 10px;
+    display: inline-block;
+    background: #ff0083;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 40px;
+    top: 59px;
+    left: 82px;
+}
+
+.home-page .astronaut img {
+    position: absolute;
+    max-width: 528px;
+    width: 100%;
+    /* margin-top: 100px; */
+    z-index: 2;
+    height: 300px;
+    width: 340px;
+    /* right: 323px; */
+    /* object-position: 40% 50%; */
+    /* object-fit: cover; */
+    top: 267px;
+    right: 134px;
+}
+
+.moonImage {
+    height: 118px;
+    position: absolute;
+    left: 538px;
+    top: 195px;
+}
+
+.bucket img {
+    position: absolute;
+    /* max-width: 200px; */
+    width: 100%;
+    /* margin-top: 100px; */
+    z-index: 2;
+    height: 218px;
+    width: 212px;
+    /* right: 323px; */
+    /* object-position: 40% 50%; */
+    /* object-fit: cover; */
+    top: 380px;
+    right: 95px;
+}
+
+.astro-back {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.home-page .social {
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* filter: invert(1); */
+}
+
+.home-page .social li {
+    list-style: none;
+}
+
+.home-page .social li a {
+    display: block;
+    margin-right: 20px;
+    transform: scale(0.8);
+}
+
+.subscribe {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 60px;
+    background: #fff;
+    color: white;
+    z-index: 10000;
+    box-shadow: 0 0 0 100vh rgba(49, 39, 71, 0.95);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.subscribe h2 {
+    font-size: 48px;
+    color: #ff0083;
+}
+
+.subscribe p {
+    font-size: 20px;
+    color: #ff0083;
+}
+
+.subscribe .inputField {
+    margin-top: 20px;
+}
+
+.subscribe .inputField input {
+    padding: 10px;
+    outline: none;
+    width: 300px;
+    font-size: 18px;
+    border: 1px solid #999;
+}
+
+.subscribe .inputField input[type="submit"] {
+    padding: 10px;
+    outline: none;
+    width: 140px;
+    color: #fff;
+    background: #ff0083;
+    border: 1px solid #999;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+
+.subscribe .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* About page */
+
+.about-page {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 100px;
+    background-color: #4fbbb4;
+}
+
+.about-page h2 {
+    text-align: center;
+}
+
+/* .footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 100px;
+} */
+
+
+/* @media (max-width: 991px) {
+    .home-page {
+        flex-direction: column;
+        padding-top: 150px;
+        height: auto;
+    }
+
+    .home-page .content-box {
+        max-width: 100%;
+    }
+
+    .home-page .astronaut img {
+        margin-top: 0;
+    }
+} */
+
+
+
+
+@media only screen and (max-width: 768px) and (min-width: 426px)  {
+    .subscribe {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        padding: 60px;
+        background: #fff;
+        color: white;
+        z-index: 10000;
+        box-shadow: 0 0 0 100vh rgba(49, 39, 71, 0.95);
+    }
+
+    .subscribe h2 {
+        font-size: 30px;
+    }
+
+    .bucket img {
+        position: absolute;
+        /* max-width: 200px; */
+        width: 100%;
+        /* margin-top: 100px; */
+        z-index: 2;
+        height: 218px;
+        width: 212px;
+        /* right: 323px; */
+        /* object-position: 40% 50%; */
+        /* object-fit: cover; */
+        top: 282px;
+        right: 114px;
+    }
+
+    .subscribe .inputField input {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .skyImage {
+        height: 319px;
+        bottom: 258px;
+        right: 64px;
+    }
+
+    .moonImage {
+        height: 86px;
+        position: absolute;
+        left: 440px;
+        top: 141px;
+    }
+
+    .home-page .astronaut img {
+        top: 164px;
+        right: -5px;
+        padding-left: 182px;
+        width: 477px;
+    }
+
+    .bucket img {
+        top: 282px;
+        right: 114px;
+    }
+
+    .home-page .content-box p {
+        left: 58px;
+        /* bottom: 0px; */
+        top: -19px;
+    }
+    
+    .elkName img {
+        left: 72px;
+        top: -112px;
+    }
+    
+    .home-page .content-box h1 {
+        left: 162px;
+        font-size: 4rem;
+        bottom: 192px;
+    }
+
+}
+
+@media only screen and (max-width: 426px){
+    
+    .skyImage {
+        height: 213px;
+        bottom: 258px;
+        right: 30px;
+    }
+    
+    .home-page .astronaut img {
+        top: 226px;
+        right: 0px;
+        padding-left: 252px;
+        width: 459px;
+        height: 227px;
+    }
+    
+    .bucket img {
+        top: 339px;
+        right: 100px;
+        height: 124px;
+        width: 129px;
+    }
+
+
+    .elkName img {
+        top: -29px;
+        left: -56px;
+        width: 183px;
+    }
+    
+    .home-page .content-box h1 {
+        left: 14px;
+        font-size: 49px;
+        top: -246px;
+        text-align: center;
+    }
+    
+    .moonImage
+    {
+        height: 81px;
+        position: absolute;
+        left: 220px;
+        top: 203px;
+    }
+    
+    .home-page .content-box p {
+        left: -57px;
+        top: 30px;
+        font-size: 20px;
+        color: #3d3c3c;
+    }
+
+}
