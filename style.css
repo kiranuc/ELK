@@ -345,7 +345,7 @@
 
 }
 
-@media only screen and (max-width: 426px){
+@media only screen and (max-width: 426px) and (min-width: 376px){
     
     .skyImage {
         height: 213px;
@@ -397,4 +397,59 @@
         color: #3d3c3c;
     }
 
+}
+
+
+
+@media only screen and (max-width: 376px) {
+    .bucket img {
+        top: 336px;
+        right: 100px;
+        height: 97px;
+        width: 108px;
+    }
+    
+    
+    .home-page .astronaut img {
+        top: 226px;
+        right: 0px;
+        padding-left: 252px;
+        width: 453px;
+        height: 202px;
+    }
+    
+    
+    .skyImage {
+        height: 191px;
+        bottom: 302px;
+        right: 11px;
+    }
+    
+    .moonImage {
+        height: 60px;
+        position: absolute;
+        left: 189px;
+        top: 195px;
+    }
+    
+    
+    .elkName img {
+        top: -44px;
+        left: -49px;
+        width: 163px;
+    }
+    
+    .home-page .content-box h1 {
+        left: -1px;
+        font-size: 46px;
+        top: -246px;
+        text-align: center;
+    }
+    
+    .home-page .content-box p {
+        left: -48px;
+        top: 9px;
+        font-size: 20px;
+        color: #3d3c3c;
+    }
 }
